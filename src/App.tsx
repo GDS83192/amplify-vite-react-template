@@ -29,6 +29,7 @@ function App() {
     <Authenticator>
       {({ signOut, user }) => (
     <main>
+                <h1>{user?.signInDetails?.loginId}'s todos</h1>
                 <button onClick={signOut}>Sign out</button>
       <h1>My todos</h1>
       <button onClick={createTodo}>+ new</button>
